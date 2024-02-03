@@ -1,0 +1,10 @@
+C:\Users\axel_\source\repos\TimeManager\TimeManager\bin\Debug\TimeManager.exe.config
+C:\Users\axel_\source\repos\TimeManager\TimeManager\bin\Debug\TimeManager.exe
+C:\Users\axel_\source\repos\TimeManager\TimeManager\bin\Debug\TimeManager.pdb
+C:\Users\axel_\source\repos\TimeManager\TimeManager\obj\Debug\TimeManager.csproj.AssemblyReference.cache
+C:\Users\axel_\source\repos\TimeManager\TimeManager\obj\Debug\TimeManager.Form1.resources
+C:\Users\axel_\source\repos\TimeManager\TimeManager\obj\Debug\TimeManager.Properties.Resources.resources
+C:\Users\axel_\source\repos\TimeManager\TimeManager\obj\Debug\TimeManager.csproj.GenerateResource.cache
+C:\Users\axel_\source\repos\TimeManager\TimeManager\obj\Debug\TimeManager.csproj.CoreCompileInputs.cache
+C:\Users\axel_\source\repos\TimeManager\TimeManager\obj\Debug\TimeManager.exe
+C:\Users\axel_\source\repos\TimeManager\TimeManager\obj\Debug\TimeManager.pdb

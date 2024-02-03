@@ -36,7 +36,7 @@ namespace TimeManager.DxAxelxD.Classes
             }
             else
             {
-                actualActiveApp = "Null process";
+                actualActiveApp = "Null process (a) test.";
             }
         }
     }

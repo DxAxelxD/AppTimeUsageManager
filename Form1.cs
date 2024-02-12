@@ -19,5 +19,15 @@ namespace TimeManager
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Task.Run(() => DxAxelxD.Classes.AppCatcher.Start());
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblActiveApp.Text = DxAxelxD.Classes.AppCatcher.GetActualActiveApp();
+        }
     }
 }

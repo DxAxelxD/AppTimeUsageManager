@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TimeManager.DxAxelxD.Classes
@@ -18,12 +19,19 @@ namespace TimeManager.DxAxelxD.Classes
         private static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId);
         private static string actualActiveApp;
         private static DateTime startTime;
+        private static bool appCatcherRunning;
         public static void Start()
         {
             //Starts the app catcher service
-            startTime = DateTime.Now;
+                Process process = catchApps();
+            actualActiveApp = process.ProcessName;
         }
-        private static void catchApps()
+        public static void Stop()
+        {
+            //Stops the app catcher service
+            appCatcherRunning = false;
+        }
+        private static Process catchApps()
         {
             IntPtr handle = GetForegroundWindow();
 
@@ -32,12 +40,17 @@ namespace TimeManager.DxAxelxD.Classes
                 uint processId;
                 GetWindowThreadProcessId(handle, out processId);
                 Process process = Process.GetProcessById((int)processId);
-                actualActiveApp = process.ProcessName;
+                return process;
             }
             else
             {
                 actualActiveApp = "Null process (a) test.";
             }
+            return null;
+        }
+        public static string GetActualActiveApp()
+        {
+            return actualActiveApp;
         }
     }
 }
